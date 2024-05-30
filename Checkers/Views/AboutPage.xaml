@@ -1,0 +1,26 @@
+﻿<Page x:Class="Checkers.Views.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Checkers.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AboutPage">
+
+    <Grid Grid.Column="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="Creator" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center">Creator: Catoi Mihai-Alexandru</Label>
+        <Button x:Name="Out" Width="20" Height="20" Margin="731,6,19,8" VerticalAlignment="Center" HorizontalAlignment="Right" Background="#FFFCFCFC" Click="Back">X</Button>
+        <Label x:Name="Email" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">Email: mihai.catoi@student.unitbv.ro</Label>
+        <Label x:Name="Grupa" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">Grupa: 10LF321</Label>
+        <TextBlock x:Name="Descriere" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" TextWrapping="WrapWithOverflow" LineHeight="50">Checkers cunoscut si sub numele de Dame este un joc de tabla in care fiecare jucotor trebuie sa mute o piesa in diagonala si captureze piesele adversarului. Fiecare jucator incepe cu 12 piese, iar castigatorul este cel care ramane cu piese pe tabla in timp ce adversarul ramane cu 0 piese. </TextBlock>
+
+
+    </Grid>
+</Page>
